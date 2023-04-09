@@ -76,7 +76,7 @@ static board_t board;
 
 /* === Definiciones de funciones internas ================================== */
 
-void Rojo(void * parameters) {
+/* void Rojo(void * parameters) {
     while (true) {
         DigitalOutputToggle(board->led_rojo);
         vTaskDelay(pdMS_TO_TICKS(500));
@@ -103,7 +103,7 @@ void Azul(void * parameters) {
             DigitalOutputToggle(board->led_azul);
         }
     }
-}
+} */
 
 void Blinking(void * parameters) {
     parametros_t parametros = (parametros_t)parameters;
